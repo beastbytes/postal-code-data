@@ -8,7 +8,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist beastbytes/iban
+php composer.phar require --prefer-dist beastbytes/postal-code-data
 ```
 
 or add

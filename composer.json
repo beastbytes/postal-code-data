@@ -1,0 +1,27 @@
+{
+    "name": "beastbytes/postal-code-data",
+    "type": "library",
+    "description": "Interface for retrieving postal code data",
+    "keywords": [
+        "postal code"
+    ],
+    "support": {
+        "issues": "https://github.com/beastbytes/postal-code-data/issues",
+        "source": "https://github.com/beastbytes/postal-code-data"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [{
+        "name": "Chris Yates",
+        "email": "chris.l.yates@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BeastBytes\\PostalCode\\": "src"
+        }
+    }
+}

@@ -23,5 +23,11 @@
         "psr-4": {
             "BeastBytes\\PostalCode\\": "src"
         }
+    },
+    "require-dev": {
+        "consolidation/robo": "^4.0"
+    },
+    "scripts": {
+        "robo": "robo"
     }
 }

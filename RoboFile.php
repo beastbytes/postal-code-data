@@ -11,8 +11,8 @@ use Robo\Tasks;
 class RoboFile extends Tasks
 {
     public function release(ConsoleIO $io, $opt = [
-        'branch' => 'main',
-        'what' => 'patch'
+        'branch|p' => 'main',
+        'what|w' => 'patch'
     ]): void
     {
         $result = $this->taskSemVer()

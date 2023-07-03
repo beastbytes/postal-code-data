@@ -10,7 +10,7 @@ use Robo\Tasks;
  */
 class RoboFile extends Tasks
 {
-    public function release($branch = 'master', $what = 'patch'): void
+    public function release(string $branch = 'master', string $what = 'patch'): void
     {
         $this->say($what);
         $result = $this->taskSemVer()
@@ -28,17 +28,17 @@ class RoboFile extends Tasks
      * @param string $branch
      * @param string $tag
      */
-    public function createTag($branch = '', $tag = '')
+    public function createTag(string $branch = '', string $tag = ''): void
     {
         $this->say("Creating tag $tag on origin::$branch");
 
         $this->taskGitStack()
-             ->stopOnFail()
+            ->stopOnFail()
             ->add('.semver')
-             ->commit('Update version')
-             ->push('origin', $branch)
-             ->tag($tag)
-             ->push('origin', $tag)
-             ->run();
+            ->commit('Update version')
+            ->push('origin', $branch)
+            ->tag($tag)
+            ->push('origin', $tag)
+            ->run();
     }
 }
